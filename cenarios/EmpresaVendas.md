@@ -120,8 +120,3 @@ todos na mesma compra.
 • Data da Compra: 12 de setembro de 2025 
 
 • Item Comprado: 1 unidade do 'Headset Gamer 7.1'. 
-
-
-## Comandos SQL
-
-Você pode visualizar os comandos SQL desse cenário no arquivo [EmpresaVendas.sql](EstudosMySql/comandos/EmpresaVendas.sql).
