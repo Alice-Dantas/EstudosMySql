@@ -6,6 +6,7 @@
    
 ● Crie um novo banco de dados chamado EmpresaVendas e o selecione.
 
+
 ### Crie as Tabelas:
 
 ● Tabela Clientes: 
@@ -19,6 +20,7 @@ auto-incrementa.
 
 ○ cidade: Texto de até 50 caracteres. 
 
+
 ● Tabela Produtos: 
 
 ○ produto_id: Deve ser um número inteiro, chave primária e que se 
@@ -28,6 +30,7 @@ auto-incrementa.
 ○ preco: Número decimal com precisão de 10 dígitos, sendo 2 para as casas 
 decimais. Não pode ser nulo. 
 
+
 ● Tabela Pedidos: 
 
 ○ pedido_id: Número inteiro, chave primária e auto-incrementado. 
@@ -36,6 +39,7 @@ decimais. Não pode ser nulo.
 Clientes. 
 
 ○ data_pedido: Deve armazenar uma data. 
+
 
 ● Tabela Pedido_Itens: 
 
@@ -49,9 +53,11 @@ Produtos.
 
 ○ quantidade: Número inteiro. 
 
+
 ## Parte 2: Inserção de Dados (DML) 
 
 ### Popule as Tabelas Base:
+
 
 ● Adicionar Clientes 
 
@@ -66,6 +72,7 @@ Horizonte'
 
 ○ Cliente 5: Nome: 'Lucas Ferreira', Email: 'lucas.ferreira@email.com', Cidade: 'Porto Alegre' 
 
+
 ● Adicionar Produtos 
 
 ○ Produto 1: Nome: 'Notebook Gamer', Preço: 5500.00 
@@ -78,26 +85,43 @@ Horizonte'
 
 ○ Produto 5: Nome: 'Headset Gamer 7.1', Preço: 499.90 
 
-### Parte 3: Criando Múltiplos Relacionamentos de Venda 
 
-## Cenário de Venda 1: A Compra Simples 
+## Parte 3: Criando Múltiplos Relacionamentos de Venda 
+
+### Cenário de Venda 1: A Compra Simples 
+
 • Cliente: João Silva 
-• Data da Compra: Hoje  
+
+• Data da Compra: Hoje   
+
 • Item Comprado: 1 unidade do 'Notebook Gamer'. 
 
-## Cenário de Venda 2: O Pedido com Múltiplos Itens 
+### Cenário de Venda 2: O Pedido com Múltiplos Itens 
+
 • Cliente: Maria Santos 
+
 • Data da Compra: 10 de setembro de 2025 
+
 • Itens Comprados: 1 unidade do 'Mouse Sem Fio' e 1 unidade do 'Teclado Mecânico RGB', 
 todos na mesma compra. 
-• Sua Tarefa: Crie um único pedido para Maria Santos na tabela Pedidos. Depois, adicione 
 
-## Cenário de Venda 3: O Pedido com Múltiplas Unidades 
+### Cenário de Venda 3: O Pedido com Múltiplas Unidades 
+
 • Cliente: Lucas Ferreira 
+
 • Data da Compra: 11 de setembro de 2025 
+
 • Item Comprado: 2 unidades do 'Monitor Ultrawide 29"'. 
 
-## Cenário de Venda 4: O Cliente Recorrente 
+### Cenário de Venda 4: O Cliente Recorrente 
+
 • Cliente: João Silva 
+
 • Data da Compra: 12 de setembro de 2025 
+
 • Item Comprado: 1 unidade do 'Headset Gamer 7.1'. 
+
+
+## Comandos SQL
+
+Você pode visualizar os comandos SQL desse cenário no arquivo [comandos_sql.sql](comandos/EmpresaVendas.sql).
