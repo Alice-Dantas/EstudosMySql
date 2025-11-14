@@ -120,3 +120,45 @@ todos na mesma compra.
 • Data da Compra: 12 de setembro de 2025 
 
 • Item Comprado: 1 unidade do 'Headset Gamer 7.1'. 
+
+
+## Consulte e Manipule
+
+### Usando SELECT e WHERE
+
+● Escreva uma consulta que retorne o nome e o e-mail de todos os 
+clientes da cidade de São Paulo. 
+
+● Elabore uma consulta que liste o nome_produto e o preco de todos os 
+produtos com valor superior a 500.00. 
+
+● Crie uma consulta para mostrar o pedido_id e o cliente_id de todos os 
+pedidos feitos no dia 10-09-2024.
+
+● Escreva uma consulta que retorne apenas o email do cliente cujo nome 
+é 'Pedro Almeida'. 
+
+● Liste o nome_produto e o preço dos produtos que se encaixam na faixa 
+de preço  entre R$ 100,00 e R$ 400,00.
+
+### Usando JOIN
+
+● Escreva uma consulta que mostre o nome do cliente (da tabela Clientes) 
+e o pedido_id e a data_pedido (da tabela Pedidos) para cada pedido 
+realizado. 
+
+● Crie uma consulta que junte as tabelas Pedidos, Pedido_Itens e 
+Produtos. O resultado deve exibir o pedido_id, o nome_produto, a 
+quantidade de itens comprados e o preco unitário do produto. 
+
+● Elabore uma consulta que liste o nome_produto de todos os produtos 
+que 'João Silva' já comprou, incluindo as compras de diferentes datas. 
+
+### Usando ALTER TABLE
+
+● Use o comando ALTER TABLE para adicionar uma nova coluna chamada telefone na tabela Clientes. A coluna deve ser do tipo VARCHAR(20).
+
+● Utilize o comando UPDATE para adicionar um número de telefone para o cliente 'João Silva'. Por exemplo: (11) 98765-4321. 
+
+● Altere a coluna nome_produto na tabela Produtos para que ela aceite até 
+150 caracteres (VARCHAR(150)). 
