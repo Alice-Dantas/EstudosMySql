@@ -124,4 +124,4 @@ todos na mesma compra.
 
 ## Comandos SQL
 
-Você pode visualizar os comandos SQL desse cenário no arquivo [comandos_sql.sql](comandos/EmpresaVendas.sql).
+Você pode visualizar os comandos SQL desse cenário no arquivo [EmpresaVendas.sql](comandos/EmpresaVendas.sql).
