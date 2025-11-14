@@ -63,8 +63,7 @@ values (1, 1, 1),
        (2, 3, 1),
        (3, 4, 2),
        (4, 5, 1);
-
-
+       
 /* CORRIGINDO VÁRIAS DATAS PARA SETEMBRO EM UM ÚNICO UPDATE */
 
 update Pedidos
@@ -86,3 +85,60 @@ where pedido_id in (2, 3, 4);
 
 -- WHERE pedido_id IN (2, 3, 4)
 --  → Filtra quais linhas da tabela serão modificadas.
+
+
+/* BUSCANDO DADOS COM SELECT E WHERE */
+
+select nome, email
+from Clientes
+where cidade='São Paulo';
+
+select nome_produto, preco
+from Produtos
+where preco>500.00;
+
+select pedido_id, cliente_id
+from Pedidos
+where data_pedido='2025-09-10';
+
+select email
+from Clientes
+where nome='Pedro Almeida';
+
+select nome_produto, preco
+from Produtos
+where (preco>100) and (preco<400);
+
+
+/* COMBINANDO TABELAS COM JOIN */
+
+select c.nome, p.pedido_id, p.data_pedido
+from Clientes c
+join Pedidos p on c.cliente_id=p.cliente_id;
+
+select pe.pedido_id, pei.quantidade, pr.nome_produto, pr.preco
+from Pedidos pe
+join Pedido_Itens pei
+join Produtos pr
+on pe.pedido_id=pei.pedido_id and pei.produto_id=pr.produto_id;
+
+SELECT pr.nome_produto
+FROM produtos pr
+JOIN pedido_itens pei
+JOIN pedidos pe
+JOIN clientes c 
+ON pr.produto_id = pei.produto_id and pei.pedido_id = pe.pedido_id and c.cliente_id = pe.cliente_id
+WHERE c.nome = 'João Silva';
+
+
+/* MODIFICANDO TABELAS COM ALTER TABLE */
+
+alter table Clientes
+add column telefone varchar(20);
+
+update Clientes
+set telefone='(11) 98765-4321'
+where cliente_id=1;
+
+alter table Produtos
+modify nome_produto varchar(150);
